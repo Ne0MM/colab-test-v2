@@ -1,0 +1,43 @@
+.container{
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+.logoContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.centerLetter{
+    color: black;
+    font-size: 1rem;
+}
+
+.cardContainer{
+    width: 4.8rem;
+    height: 4rem;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transform: rotate(var(--card-angle));
+
+}
+
+.card{
+    height: 50%;
+    width: 50%;
+    background-color: var(--backgroud-color);
+}
