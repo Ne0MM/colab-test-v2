@@ -16,15 +16,33 @@ function ColabLogo(props) {
         {color : '#7f00ffe6', deg : 235, scale : 0},
     ])
 
-    const handleCardAnim = () => {
+    const handleCardAnim = (atCardMap , ent) => {
 
-        const updatedCardMap = cardMap.map((e,index) => {
-            
-                return {...e, deg : cardMap[index].deg + 90}
+        const updatedCardMap = atCardMap.map((e,index) => {
 
-        }) 
+            if(ent === index){
 
-        setCardMap(updatedCardMap)
+                return{...e, deg : atCardMap[index].deg + 90};
+
+            }else{
+
+                return e;
+
+            }
+
+        })
+        
+        setCardMap(updatedCardMap);
+
+        if(ent < 8){
+
+            setTimeout(() => {
+
+                handleCardAnim(updatedCardMap, ent + 1);
+
+            }, 300)
+
+        }
 
     }
 
@@ -32,7 +50,7 @@ function ColabLogo(props) {
 
         setTimeout(() => {
             
-            	handleCardAnim();
+            	handleCardAnim(cardMap, 0);
 
         }, 300);
 
