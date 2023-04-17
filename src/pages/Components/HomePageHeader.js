@@ -1,45 +1,9 @@
 import ColabLogo from './ColabLogo';
+import ColorSlider from './ColorSlider';
 import styles from './ComponentStyles/HomePageHeader.module.css';
 import { useEffect, useState, useRef } from "react";
 
 export default function HomePageHeader() {
-
-  const [slideValue, setSlideValue] = useState(-50);
-  const slideSwitch = useRef(false);
-
-  const slideTimer = 2000;
-
-  const handleSlideColors = (actSlide) => {
-
-    if (actSlide == -50){
-
-      actSlide = 0;
-
-    }else {
-      
-      actSlide = actSlide - 10;
-
-    }
-
-    setSlideValue(actSlide);
-
-    setTimeout(() => {
-      handleSlideColors(actSlide);
-    }, slideTimer)
-
-  }
-
-  useEffect(() => {
-
-    if (slideSwitch.current == false){
-
-      handleSlideColors(slideValue);
-
-      slideSwitch.current = !slideSwitch.current;
-
-    }
-
-  },[])
 
   return (
     <header className={styles.pageHeader}>
@@ -52,14 +16,7 @@ export default function HomePageHeader() {
 
         </div>
 
-        <div 
-        className={styles.colorSlide}
-        style={{
-        ['--slide-value'] : slideValue + '%'
-        }}
-        >
-
-        </div>
+        <ColorSlider/>
 
     </header>
   )
