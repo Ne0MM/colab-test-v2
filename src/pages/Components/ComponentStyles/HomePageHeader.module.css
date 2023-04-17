@@ -1,0 +1,22 @@
+.pageHeader{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.headerContainer{
+    height: 4rem;
+    background-color: #0e0e0e;
+}
+
+.colorSlide{
+    height: 0.4rem;
+    width: 200%;
+    background-image: 
+    linear-gradient(120deg, #ff00ff 10%, #ff7f00 10%, #ff7f00 20%, #00ff00 20%, #00ff00 30%, #0000ff 30%, #0000ff 40%, #ff0000 40%, #ff0000 50%, 
+    #ffff00 50%, #ffff00 60%, #037fff 60%, #037fff 70%, #7f00ff 70%, #7f00ff 80%, #ff00ff 80%, #ff00ff 90%, #ff7f00 90%);
+    transition: 1s ease-in-out;
+    transform: translateX(var(--slide-value));
+}

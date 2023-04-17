@@ -1,6 +1,7 @@
 .container{
     height: 6.5rem;
     width: 6.5rem;
+    position: relative;
 }
 
 .logoContainer{
