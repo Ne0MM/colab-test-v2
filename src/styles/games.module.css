@@ -1,0 +1,15 @@
+.container{
+    height: 100vh;
+}
+
+
+.gamesHeader{
+    height: 4rem;
+    background-color: #0e0e0e;
+}
+
+.gamesSideNav{
+    height: 100%;
+    width: 2rem;
+    background-color: red;
+}
