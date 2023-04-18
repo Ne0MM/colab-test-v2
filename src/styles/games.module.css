@@ -2,14 +2,86 @@
     height: 100vh;
 }
 
-
-.gamesHeader{
-    height: 4rem;
+.header{
     background-color: #0e0e0e;
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.headerSearch{
+    margin-left: 4rem;
+    background-color: #2e1249;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.headerSearchInput:focus {
+    border: none;
+    outline: none;
+}
+
+.headerSearchInput {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
 }
 
 .gamesSideNav{
+    position: absolute;
     height: 100%;
+    width: 4rem;
+    padding-top: 4rem;
+    background-color: #0e0e0ea1;
+    z-index: 1;
+}
+
+.gamesSecWrapper{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(135deg, #8000ff, #0e0e0e);
+}
+
+.gamesSec{
+    height: 100%;
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+
+.inputClear{
+    margin-right: 0.1rem;
     width: 2rem;
-    background-color: red;
+    height: 2rem;
+}
+
+.inputClear:hover{
+    cursor: pointer;
+}
+
+.clearSearch{
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+    display: var(--display-clear);
+}
+
+.searchIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    filter: invert(100%);
 }
