@@ -2,6 +2,8 @@
     height: 100vh;
 }
 
+/* Header */
+
 .header{
     background-color: #0e0e0e;
     width: 100%;
@@ -84,4 +86,17 @@
     height: 1.5rem;
     margin-left: 1rem;
     filter: invert(100%);
+}
+
+
+/* Side Nav */
+
+.topNav{
+    height: 50%;
+    width: 100%;
+}
+
+.bottomNav{
+    height: 50%;
+    width: 100%;
 }

@@ -1,0 +1,63 @@
+.pageHeader{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.headerContainer{
+    height: 4rem;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburguerMenuWrapper{
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburguerMenuWrapper:hover{
+    cursor: pointer;
+}
+
+.hamburguerMenu{
+    width: 1.5rem;
+    height: 2px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.hamLine{
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    background-color: #8000ff;
+    transition: 200ms ease-in-out;
+    transform: rotate(var(--anim-deg)) translateY(var(--anim-y));
+}
+
+.logoContainer{
+    width: 4rem;
+    height: 100%;
+}
+
+.signUpButton{
+    width: 4rem;
+    height: 100%;
+}
+
+.sideOptions{
+    position: fixed;
+    height: 100%;
+    width: 6rem;
+    padding-top: 4rem;
+    background-color: #0e0e0ea1;
+    transition: 200ms ease-in-out;
+    transform: translateX(var(--side-place));
+}

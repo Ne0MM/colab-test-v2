@@ -74,6 +74,18 @@ export default function play() {
 
       <div className={styles.gamesSideNav}>
 
+        <div className={styles.topNav}>
+
+        </div>
+
+        <div className={styles.bottomNav}>
+
+          <div className={styles.signUp}>
+
+          </div>
+
+        </div>
+
       </div>
 
       <section className={styles.gamesSecWrapper}>
