@@ -2,6 +2,7 @@ import ColabLogo from './ColabLogo';
 import ColorSlider from './ColorSlider';
 import styles from './ComponentStyles/HomePageHeader.module.css';
 import { useEffect, useState, useRef } from "react";
+import StaticLogo from './StaticLogo';
 
 export default function HomePageHeader() {
 
@@ -11,6 +12,8 @@ export default function HomePageHeader() {
         <div className={styles.headerContainer}>
 
             <div className={styles.logoContainer}>
+
+              <StaticLogo/>
 
             </div>
 
