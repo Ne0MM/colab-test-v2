@@ -61,3 +61,25 @@
     transition: 200ms ease-in-out;
     transform: translateX(var(--side-place));
 }
+
+.signUpButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogarButton{
+    height: 2rem;
+    width: 80%;
+    background-color: #ff00ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogarButton:hover{
+
+    cursor: pointer;
+
+}

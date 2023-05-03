@@ -4,6 +4,7 @@ import ColorSlider from './Components/ColorSlider';
 import HomePageBody from './Components/HomePageBody'
 import HomePageFooter from './Components/HomePageFooter'
 import StaticLogo from './Components/StaticLogo';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -82,7 +83,16 @@ export default function Home() {
 
             </div>
 
-            <div className={styles.signUpButton}></div>
+            <div className={styles.signUpButton}>
+
+              <div
+              className={styles.jogarButton}
+              >
+
+                  jogar
+
+              </div>
+            </div>
 
           </div>
 

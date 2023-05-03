@@ -3,6 +3,8 @@ import Image from 'next/image';
 import clearImg from '../images/XIcon.svg'
 import searchImg from '../images/SearchIcon.svg'
 import styles from '../styles/games.module.css'
+import GameCard from './Components/GameCard';
+import StaticLogo from './Components/StaticLogo';
 
 export default function play() {
 
@@ -70,6 +72,8 @@ export default function play() {
 
         </div>
 
+        <StaticLogo/>
+
       </header>
 
       <div className={styles.gamesSideNav}>
@@ -91,6 +95,10 @@ export default function play() {
       <section className={styles.gamesSecWrapper}>
 
         <div className={styles.gamesSec}>
+
+          <GameCard/>
+
+          <GameCard/>
 
         </div>
 
